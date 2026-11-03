@@ -154,7 +154,7 @@ export function HeroSection() {
               <div className="relative rounded-[2.5rem] overflow-hidden border-2 border-border/80 bg-surface shadow-2xl p-2">
                 <div className="relative w-full aspect-[4/5] rounded-[2.2rem] overflow-hidden bg-surface-soft">
                   <ImageWithFallback
-                    src="/images/rajesh.jpeg"
+                    src="/images/rajesh1.jpeg"
                     alt="Rajesh Samysundaram — Agricultural Engineer & Agri-Tech Full Stack Developer"
                     fill
                     priority
@@ -226,7 +226,9 @@ export function HeroSection() {
             className="group flex flex-col items-center gap-2 text-xs font-medium text-muted hover:text-primary transition-colors"
             aria-label="Scroll to discover more"
           >
-            <span className="tracking-widest uppercase text-[10px]">Explore Portfolio</span>
+            <span className="tracking-widest uppercase text-[10px]">
+              Explore Portfolio
+            </span>
             <div className="flex h-8 w-5 items-start justify-center rounded-full border border-border p-1 group-hover:border-primary transition-colors">
               <span className="h-1.5 w-1.5 rounded-full bg-primary animate-bounce" />
             </div>

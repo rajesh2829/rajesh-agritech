@@ -28,11 +28,19 @@ export const expertiseData: ExpertiseData = {
       number: "01",
       title: "Irrigation & Water Management",
       summary:
-        "Understanding of irrigation systems, water efficiency and conservation practices.",
+        "Signature engineering domain: precision micro-irrigation design, hydraulic pipe network calculations, fertigation systems, and smart sensor-driven water scheduling.",
       details:
-        "Comprehensive expertise in micro-irrigation, drip and sprinkler distribution, hydraulic pressure dynamics, soil moisture retention thresholds, and automated scheduling methods.",
+        "End-to-end expertise across pressurized drip and micro-sprinkler layouts, emitter discharge uniformity (Christiansen's Cu), Hazen-Williams friction loss calculations, media and disc filtration sizing, Venturi fertigation injection, and crop evapotranspiration (ET0 × Kc) scheduling.",
       iconName: "droplets",
-      tags: ["Drip Irrigation", "Water Efficiency", "Hydraulics", "Conservation"],
+      tags: [
+        "Drip Irrigation",
+        "Hydraulics",
+        "Fertigation",
+        "Scheduling",
+        "ET-based Irrigation",
+        "Smart Irrigation",
+        "Water Efficiency",
+      ],
     },
     {
       id: "soil-water-conservation",

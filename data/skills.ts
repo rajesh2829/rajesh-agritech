@@ -7,7 +7,7 @@ export interface SkillItem {
 export interface SkillPanel {
   title: string;
   subtitle: string;
-  iconName: "wheat" | "terminal";
+  iconName: "wheat" | "terminal" | "droplets";
   description: string;
   groups: {
     categoryName: string;
@@ -28,21 +28,32 @@ export const skillsData: SkillsSectionData = {
   sectionSubtitle: "Dual-Domain Mastery in Agronomy and Cloud Software",
   headline: "Specialized Knowledge Across Fields & Codebases",
   agriculturePanel: {
-    title: "Agriculture & Engineering",
-    subtitle: "Domain Expertise & Agronomic Science",
+    title: "Irrigation & Agri Engineering",
+    subtitle: "Signature Engineering Domain & Agronomic Science",
     iconName: "wheat",
     description:
-      "Core competencies built during Bachelor of Engineering and applied to smart farming systems, water resources, and mechanization.",
+      "Four-year B.E. Agricultural Engineering foundation at SNS College of Technology, specializing in hydraulic pipe network design, pressurized micro-irrigation, and water-use efficiency.",
     groups: [
       {
-        categoryName: "Field Engineering",
+        categoryName: "Irrigation Engineering (Signature Domain)",
         skills: [
-          "Agricultural Engineering",
-          "Irrigation & Water Management",
-          "Soil Science",
-          "Farm Machinery",
-          "Agricultural Technology",
-          "Technical Analysis",
+          "Drip & Micro-Irrigation System Design",
+          "Pipe Hydraulics & Friction Loss (Hazen-Williams)",
+          "Crop Water Requirement (ET0 & Kc Scheduling)",
+          "Filtration (Screen, Disc & Media) & Fertigation",
+          "Sprinkler Uniformity (Christiansen Cu & DU)",
+          "Smart Valve & IoT Sensor Actuation",
+        ],
+      },
+      {
+        categoryName: "Agronomy & Field Engineering",
+        skills: [
+          "Soil Physics & Infiltration Dynamics",
+          "Water Conservation & Deficit Irrigation",
+          "Farm Machinery & Implement Sizing",
+          "Watershed Management & Rainwater Harvesting",
+          "Precision Agriculture & Telemetry",
+          "Technical Hydraulic Analysis",
         ],
       },
     ],
@@ -52,7 +63,7 @@ export const skillsData: SkillsSectionData = {
     subtitle: "Modern Web, Backend, QA & Cloud Stacks",
     iconName: "terminal",
     description:
-      "Modern development stack honed over 3+ years delivering production dashboards, APIs, and client platforms.",
+      "Modern development stack honed over 3+ years delivering production dashboards, telemetry portals, APIs, and client platforms.",
     groups: [
       {
         categoryName: "Frontend & Architecture",
@@ -60,7 +71,7 @@ export const skillsData: SkillsSectionData = {
       },
       {
         categoryName: "Backend & Database",
-        skills: ["Node.js", "Express.js", "MongoDB", "PostgreSQL", "WebSockets"],
+        skills: ["Node.js", "Express.js", "MongoDB", "PostgreSQL", "REST APIs", "WebSockets"],
       },
       {
         categoryName: "Quality, Testing & Cloud",
@@ -71,7 +82,7 @@ export const skillsData: SkillsSectionData = {
           "Cypress",
           "Git and GitHub",
           "Docker",
-          "AWS",
+          "AWS Basics",
         ],
       },
     ],

@@ -5,7 +5,9 @@ import { MarqueeSection } from "@/components/sections/marquee-section";
 import { StatsSection } from "@/components/sections/stats-section";
 import { AboutSection } from "@/components/sections/about-section";
 import { FocusAreasSection } from "@/components/sections/focus-areas-section";
+import { IrrigationSection } from "@/components/sections/irrigation-section";
 import { ProjectsSection } from "@/components/sections/projects-section";
+import { InsightsSection } from "@/components/sections/insights-section";
 import { JourneySection } from "@/components/sections/journey-section";
 import { SkillsSection } from "@/components/sections/skills-section";
 import { GallerySection } from "@/components/sections/gallery-section";
@@ -21,7 +23,9 @@ export default function Home() {
         <StatsSection />
         <AboutSection />
         <FocusAreasSection />
+        <IrrigationSection />
         <ProjectsSection />
+        <InsightsSection />
         <JourneySection />
         <SkillsSection />
         <GallerySection />

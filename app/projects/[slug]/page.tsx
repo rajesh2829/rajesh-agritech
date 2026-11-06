@@ -11,6 +11,9 @@ import {
   AlertTriangle,
   Target,
   Sparkles,
+  UserCheck,
+  TrendingUp,
+  BookOpen,
 } from "lucide-react";
 import { GithubIcon } from "@/components/ui/icons";
 import { projectsData } from "@/data/projects";
@@ -96,6 +99,12 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <span className="text-xs font-medium text-muted">
                 {project.subtitle}
               </span>
+              {caseStudy.myRole && (
+                <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-medium bg-surface-soft text-foreground border border-border">
+                  <UserCheck className="h-3 w-3 text-accent" />
+                  <span>{caseStudy.myRole}</span>
+                </span>
+              )}
             </div>
 
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-extrabold text-foreground tracking-tight">
@@ -144,6 +153,31 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               className="object-cover"
             />
           </div>
+
+          {/* Key Metrics / Highlights if present */}
+          {caseStudy.metrics && caseStudy.metrics.length > 0 && (
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+              {caseStudy.metrics.map((metric, idx) => (
+                <div
+                  key={idx}
+                  className="rounded-2xl border border-border bg-surface p-5 shadow-xs flex flex-col justify-between"
+                >
+                  <div className="flex items-center justify-between text-muted mb-2">
+                    <span className="text-xs font-semibold uppercase tracking-wider">
+                      {metric.label}
+                    </span>
+                    <TrendingUp className="h-3.5 w-3.5 text-accent" />
+                  </div>
+                  <div className="font-serif text-2xl sm:text-3xl font-extrabold text-primary">
+                    {metric.value}
+                  </div>
+                  <p className="text-[11px] text-muted mt-2 leading-tight">
+                    {metric.note}
+                  </p>
+                </div>
+              ))}
+            </div>
+          )}
 
           {/* Structured Case Study Sections */}
           <div className="space-y-12">
@@ -206,7 +240,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   <Target className="h-5 w-5" />
                 </div>
                 <h2 className="font-serif text-2xl font-bold text-foreground">
-                  The Solution
+                  The Solution & Engineering Execution
                 </h2>
               </div>
               <p className="text-base text-muted leading-relaxed">
@@ -221,7 +255,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   <Layers className="h-5 w-5" />
                 </div>
                 <h2 className="font-serif text-2xl font-bold text-foreground">
-                  Technologies Used
+                  Technologies & Engineering Methods
                 </h2>
               </div>
               <div className="flex flex-wrap gap-2.5">
@@ -243,13 +277,35 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   <CheckCircle2 className="h-5 w-5" />
                 </div>
                 <h2 className="font-serif text-2xl font-bold text-foreground">
-                  Outcome & Impact
+                  Outcome & Field Impact
                 </h2>
               </div>
               <p className="text-base text-muted leading-relaxed">
                 {caseStudy.outcome}
               </p>
             </section>
+
+            {/* Key Learnings if available */}
+            {caseStudy.keyLearnings && caseStudy.keyLearnings.length > 0 && (
+              <section className="rounded-3xl border border-border bg-surface p-7 sm:p-9 shadow-xs">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-highlight/15 text-highlight">
+                    <BookOpen className="h-5 w-5" />
+                  </div>
+                  <h2 className="font-serif text-2xl font-bold text-foreground">
+                    Key Engineering Learnings
+                  </h2>
+                </div>
+                <ul className="space-y-3.5">
+                  {caseStudy.keyLearnings.map((learning, i) => (
+                    <li key={i} className="flex items-start gap-3 text-sm sm:text-base text-muted leading-relaxed">
+                      <div className="h-2 w-2 rounded-full bg-accent mt-2 shrink-0" />
+                      <span>{learning}</span>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
 
             {/* Bottom Back Button */}
             <div className="pt-8 text-center">

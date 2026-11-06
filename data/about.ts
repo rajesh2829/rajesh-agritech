@@ -24,26 +24,27 @@ export const aboutData: AboutData = {
   sectionSubtitle: "Bridging physical farm domains and modern cloud architectures",
   headline: "Where agriculture meets software",
   storyParagraphs: [
-    "I studied Agricultural Engineering at SNS College of Technology, where I built a strong foundation in irrigation systems, soil and water management, farm machinery and modern farming technology.",
-    "After graduation I moved into software, completing a Software Testing certification and then building real-world web applications with React, Next.js, Node.js and MongoDB.",
-    "Today I sit at the intersection of both worlds: I understand the field problems farmers face, and I know how to turn them into clean, reliable digital products.",
+    "I studied Agricultural Engineering at SNS College of Technology, where I developed specialized domain expertise in irrigation engineering, hydraulic systems, soil and water conservation, and farm machinery.",
+    "After graduation I transitioned into software engineering, completing professional Software Testing certification before architecting high-performance web applications with React, Next.js, Node.js, and MongoDB.",
+    "This dual background directly powered my engineering work on Nexsens environmental and water telemetry systems, where an in-depth understanding of hydraulic pressure gradients, flow sensor calibration, and multi-depth soil moisture dynamics enabled me to design responsive, accurate real-time dashboards for field operators.",
+    "Today in Dubai, I sit squarely at the intersection of both worlds: I understand the physical hydraulic and agronomic challenges farmers and water managers face in arid regions, and I have the software engineering chops to build clean, scalable digital tools that solve them.",
   ],
   keyHighlights: [
     {
       id: "agri-foundation",
-      title: "Agri Foundation",
+      title: "Irrigation & Agri Core",
       subtitle: "B.E. Agricultural Engineering",
       description:
-        "Deep academic and field-level understanding of irrigation networks, soil water dynamics, mechanization, and environmental parameters.",
+        "Deep mastery of pressurized micro-irrigation, pipe hydraulics, Christiansen uniformity, fertigation injection, and ET0-based scheduling from SNS College of Technology.",
       icon: "sprout",
-      badge: "Domain Expertise",
+      badge: "Signature Domain",
     },
     {
       id: "fullstack-skills",
       title: "Full Stack Skills",
       subtitle: "3+ Years Web Architecture",
       description:
-        "End-to-end development capabilities using React, Next.js, Node.js, Express, MongoDB, and TypeScript to engineer scalable web portals.",
+        "End-to-end development capabilities using React, Next.js, Node.js, Express, MongoDB, and TypeScript to engineer scalable web portals and IoT telemetry consoles.",
       icon: "code",
       badge: "Modern Tech",
     },
@@ -52,7 +53,7 @@ export const aboutData: AboutData = {
       title: "Quality Mindset",
       subtitle: "Testing & QA Certified",
       description:
-        "Certified in Manual & Automation testing (SDLC/STLC, Postman, Jest, Cypress). High emphasis on reliability, test coverage, and edge cases.",
+        "Certified in Manual & Automation testing (SDLC/STLC, Postman, Jest, Cypress). High emphasis on reliability, test coverage, and edge cases in field conditions.",
       icon: "shield-check",
       badge: "Zero-Defect Focus",
     },
@@ -61,7 +62,7 @@ export const aboutData: AboutData = {
       title: "Client First Approach",
       subtitle: "Impact-Driven Delivery",
       description:
-        "Proven experience collaborating across cross-functional teams, optimizing Core Web Vitals, and translating operational requirements into intuitive UIs.",
+        "Proven experience collaborating across cross-functional teams, optimizing Core Web Vitals, and translating complex operational and agronomic requirements into intuitive UIs.",
       icon: "users",
       badge: "Collaboration",
     },

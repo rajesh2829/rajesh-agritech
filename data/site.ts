@@ -1,3 +1,10 @@
+// ==============================================================================
+// GITHUB CONFIGURATION
+// TODO: Replace 'yourgithub' with your actual GitHub username below.
+// All repository and profile links across the portfolio reference this constant.
+// ==============================================================================
+export const GITHUB_PROFILE_URL = "https://github.com/yourgithub";
+
 export interface NavItem {
   label: string;
   href: string;
@@ -50,15 +57,17 @@ export const siteConfig: SiteConfig = {
   phoneWhatsApp: "+91 97906 14060",
   whatsappUrl: "https://wa.me/919790614060",
   linkedinUrl: "https://www.linkedin.com/in/rajesh-samysundaram/",
-  githubUrl: "https://github.com/yourgithub", // Editable placeholder link
+  githubUrl: GITHUB_PROFILE_URL,
   resumeUrl: "/resume.pdf",
   availabilityBadge: "Open to agri-tech and engineering opportunities",
-  siteUrl: "https://rajeshsamysundaram.dev",
+  siteUrl: "https://rajesh-agritech.vercel.app",
   navLinks: [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
     { label: "Focus Areas", href: "#focus-areas" },
+    { label: "Irrigation", href: "#irrigation" },
     { label: "Projects", href: "#projects" },
+    { label: "Insights", href: "#insights" },
     { label: "Journey", href: "#journey" },
     { label: "Skills", href: "#skills" },
     { label: "Gallery", href: "#gallery" },
@@ -85,21 +94,25 @@ export const siteConfig: SiteConfig = {
     },
     {
       name: "GitHub",
-      href: "https://github.com/yourgithub",
+      href: GITHUB_PROFILE_URL,
       icon: "github",
       label: "View GitHub Repository",
     },
   ],
   marqueeKeywords: [
-    "Irrigation",
+    "Drip Irrigation",
+    "Hydraulics",
+    "Fertigation",
+    "Smart Irrigation",
+    "ET-Based Scheduling",
     "Soil Science",
-    "Farm Machinery",
     "Precision Agriculture",
+    "Water Management",
     "Next.js",
     "React",
     "Node.js",
     "MongoDB",
-    "Water Management",
+    "IoT Telemetry",
     "Agri-Tech",
   ],
   stats: [
